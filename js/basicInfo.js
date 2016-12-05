@@ -1,7 +1,10 @@
 import getParametersFn from "./getParameters";
 let paras=getParametersFn(location.search);
 let illness=paras.illness;
-//console.log(illness)   //获取illness.html传过来的性别参数
+if(illness){
+	console.log(illness)   //获取illness.html传过来的性别参数
+}
+
 $(".mask").hide();
 
 $(".mask").on("click","span",()=>{

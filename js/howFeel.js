@@ -1,7 +1,10 @@
 import getParametersFn from "./getParameters";
 let paras=getParametersFn(location.search);
 let vegetables=paras.vegetables;
-//console.log(vegetables)   //获取illness.html传过来的性别参数
+if(vegetables){
+	console.log(vegetables)   //获取illness.html传过来的性别参数
+}
+
 $.ajax({
 	url:"../data/question_data.json",
 	dataType:"json",
@@ -40,6 +43,6 @@ $.ajax({
 		})
 		
 		let url=encodeURI("?answerInfo="+answerInfo);
-		location.href="./status.html"+url;
+			location.href="./status.html"+url;
 	 	})
  })
