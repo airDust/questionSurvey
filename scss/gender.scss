@@ -1,0 +1,93 @@
+.gender_wrapper{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url("../img/bg.png") no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+
+	main{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		padding-top: 2.13rem;
+		position: relative;
+
+		.icon{
+			width: 1.8rem;
+			height: 1.5rem;
+			position: absolute;
+			left: 0;
+			bottom: .8rem;
+			background: url(../img/fruit.png);
+			background-size: 100% 100%;
+		}
+
+		.content{
+			width: 5.3rem;
+			height: 6.6rem;
+			position: absolute;
+			left: 50%;
+			bottom: 1.5rem;
+			margin-left: -2.6rem;
+			padding-left: .2rem;
+			@media screen and (max-height:480px) and (max-width:320px){
+				height: 5.5rem;
+			}
+		}
+		h3{
+			height: 1.6rem;
+			line-height: 1.6rem;
+			text-align: center;
+			color: #b00600;
+			font-size: .36rem;
+		}
+		dl{
+			width:50%;
+			float:left;
+			&:nth-of-type(1){
+				dt{
+					border-right:1px solid #5c3d02;
+				}
+			};
+			dt{
+				padding-left: .55rem;
+				margin-bottom: .26rem;
+				img{
+					width:1.16rem;
+					height:1.63rem;
+				}
+			}
+			dd{
+				p{
+					font-size: .28rem;
+					color: #333333;
+					line-height: .56rem;
+					text-align: center;
+
+					span{
+						display: inline-block;
+						width: .34rem;
+						height: .34rem;
+						background: url(../img/choose_05.jpg) no-repeat;
+						background-size: 100%;
+					}
+					span.active{
+						background: url(../img/choose_03.jpg) no-repeat;
+						background-size: 100%;
+					}
+
+				}
+			}
+		}
+
+		.continueBtn{
+			@include btn;
+			bottom:.7rem;
+			@media screen and (max-height:480px) and (max-width:320px){
+				bottom:.1rem;
+			}
+		}
+	}
+
+}

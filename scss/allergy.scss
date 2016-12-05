@@ -1,0 +1,123 @@
+.allergy_wrapper{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url("../img/bg.png") no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+
+	main{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		padding-top: 2.13rem;
+		position: relative;
+
+		.icon{
+			width: 1.8rem;
+			height: 1.5rem;
+			position: absolute;
+			left: 0;
+			bottom: .8rem;
+			background: url(../img/fruit.png);
+			background-size: 100% 100%;
+		}
+
+		.content{
+			width: 5.3rem;
+			height: 6.6rem;
+			position: absolute;
+			left: 50%;
+			bottom: 1.5rem;
+			margin-left: -2.6rem;
+			padding-left: .2rem;
+			@media screen and (max-height:480px) and (max-width:320px){
+				height: 5.5rem;
+			}
+		}
+		h3{
+			height: 1.6rem;
+			line-height: 1.6rem;
+			text-align: center;
+			color: #b00600;
+			font-size: .36rem;
+		}
+		.choose{
+			font-size: 0;
+			span{
+				width:50%;
+				height: .34rem;
+				line-height: .34rem;
+				display:inline-block;
+				font-size: .28rem;
+				position: relative;
+				i{
+					display: inline-block;
+					width: .34rem;
+					height: .34rem;
+					background: url(../img/choose_05.jpg) no-repeat;
+					background-size: 100%;
+					margin-left: .7rem;
+					margin-right: .1rem;
+				}
+				b{
+					position: absolute;
+				}
+			}
+			span.active{
+				i{
+					background: url(../img/choose_03.jpg) no-repeat;
+					background-size: 100%;
+				}
+				
+			}
+		}
+		.items{
+			width: 4.4rem;
+			height: 2.09rem;
+			margin: 0 auto;
+			border:1px solid #9d864e;
+			margin-top: .38rem;
+			padding: .2rem 0 0 .2rem;
+			font-size: 0;
+			position: relative;
+			&:before{
+				content:"";
+				width: .28rem;
+				height: .28rem;
+				background: #fef5c7;
+				position: absolute;
+				border: 1px solid transparent;
+				border-top-color:#a58f57;
+				border-left-color:#a58f57;
+				transform:rotate(45deg);
+				right: 1.16rem;
+				top: -.18rem;
+			};
+			span{
+				font-size: .24rem;
+				display: inline-block;
+				padding: .06rem .24rem;
+				margin-right: .14rem;
+				margin-bottom: .2rem;
+				color: #333;
+				font-size: .24rem;
+				border: 1px solid #333;
+				border-radius: 4px;
+			}
+			span.active{
+				background: $basecolor;
+				color: #fff;
+				border: 1px solid transparent;
+			}
+		}
+		.continueBtn{
+			@include btn;
+			bottom:.7rem;
+			@media screen and(max-height:480px) and(max-width:320px){
+				bottom:.1rem;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,266 @@
+.status_wrapper{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+
+	main{
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+		padding-top: 2.13rem;
+
+		.title1{
+			width:100%;
+			height:2.42rem;
+			background: $basecolor;
+			padding-top: .4rem;
+			padding-left: .4rem;
+			position: relative;
+			.right_arrow{
+				@include right_arrow;
+				position: absolute;
+				right: .3rem;
+				top: 50%;
+				border-top-color:#b00600;
+				border-right-color:#b00600;  
+				margin-top: -.12rem;
+			}
+			span{
+				font-size: .24rem;
+				color: #fff;
+			}
+			h2{
+				font-size: .36rem;
+				color: #fff;
+				line-height: .6rem;
+			}
+			p{
+				font-size: .24rem;
+				color: #fdadaa;
+				line-height: .32rem;
+				width: 4.5rem;
+			}
+		} 
+		.title2{
+			width:100%;
+			height:1.6rem;
+			background: $basecolor;
+			padding-top: .34rem;
+			padding-left: .4rem;
+			position: relative;
+			.right_arrow{
+				@include right_arrow;
+				position: absolute;
+				right: .3rem;
+				top: 50%;
+				border-top-color:#b00600;
+				border-right-color:#b00600;  
+				margin-top: -.12rem;
+			}
+			span{
+				font-size: .24rem;
+				color: #fff;
+			}
+			h2{
+				font-size: .36rem;
+				color: #fff;
+				line-height: .6rem;
+			} 
+		}
+		.title3{
+			width: 100%;
+			height: .98rem;
+			background: $basecolor;
+			h2{
+				width: 100%;
+				height: 100%;
+				line-height: .98rem;
+				color: #fff;
+				font-size: .28rem;
+				padding-left: .45rem;
+				position: relative;
+				&:after{
+					content:"";
+					width:.2rem;
+					height: .2rem;
+					background: #fff;
+					position: absolute;
+					left: 50%;
+					margin-left: -.1rem;
+					bottom: -.1rem;
+					transform:rotate(45deg);
+				};
+			}
+		}
+
+		.describe{
+			font-size: .24rem;
+			padding: .1rem 0 .1rem .45rem; 
+			&:after{
+					content:"";
+					width: 0;
+					height: 0;
+					display: block;
+					overflow: hidden;
+					clear: both;
+				};
+			dl{
+				line-height: .36rem;
+				&:after{
+					content:"";
+					width: 0;
+					height: 0;
+					overflow: hidden;
+					clear: both;
+				};
+			}
+			dl.longer{
+				dt{
+					width: 2.4rem;
+				}
+				dd{
+					width: 3.3rem;
+				}
+			}
+
+			dt{
+				width: 1.2rem;
+				float: left;
+			}
+			
+			dd{
+				width: 4.4rem;
+				float: left;
+
+			}
+		}
+
+		.wholeArticleBtn{
+			width: 100%;
+			height: .88rem;
+			padding-left: 2.63rem;
+			line-height: .88rem;
+			color: #333;
+			font-size: .28rem;
+			position: relative;
+			border-top:1px solid #eeeeee; 
+			border-bottom:1px solid #eeeeee; 
+			margin-bottom: 1px solid #eeeeee;
+			margin-bottom: .2rem;
+			.bot_arrow{
+				@include bot_arrow;
+				width: .2rem;
+				height: .2rem;
+				position: absolute;
+				left: 3.9rem;
+				top: 50%;
+				margin-top: -.14rem;
+			}
+
+		}
+
+		.wholeArticle{
+			h2{
+				font-size: .28rem;
+				color: #000;
+				width: 100%;
+				padding-left: .7rem;
+				position: relative;
+				line-height: .64rem;
+				&:before{
+					content:"";
+					width: .16rem;
+					height: .16rem;
+					background: #f6514b;
+					position: absolute;
+					left:.44rem;
+					top: 50%;
+					margin-top: -.08rem;
+					transform:rotate(45deg);
+				};
+			}
+			li{
+				line-height: .36rem;
+				font-size: .24rem;
+				padding-left: .7rem;
+				position: relative;
+				&:before{
+					content:"";
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background: #333;
+					position: absolute;
+					left: .5rem;
+					top: 50%;
+					margin-top: -2px;
+				};
+			}
+		}
+
+		dl.items{
+			&:first-of-type{
+				margin-top:.3rem;
+				dt.items{
+					border-top: 1px solid #eeeeee;
+				}
+				
+			};
+		}
+		dt.items{
+			width: 100%;
+			height:.84rem;
+			line-height: .84rem;
+			font-size:.32rem;
+			color: $basecolor;
+			padding-left: .4rem; 
+			position: relative;
+			border-bottom: 1px solid #eeeeee;
+			.bot_arrow{
+				position: absolute;
+				right: .3rem;
+				top: 50%;
+				margin-top: -.18rem;
+				@include bot_arrow;
+			}
+			.top_arrow{
+				position: absolute;
+				right: .3rem;
+				top: 50%;
+				margin-top: -.07rem;
+				@include top_arrow;
+			}
+		}
+
+		dd.items{
+			background: #fbfbfb;
+			padding: .2rem;
+			overflow:hidden;
+			dl{
+				-webkit-flex-shrink:0;
+				width: 2.8rem;
+				float: left;
+				&:nth-of-type(even){
+					float:right;
+				};
+				&:nth-of-type(odd){
+					float:left;
+				};
+				p{
+					width: 90%;
+					padding-top: .16rem;
+					padding-bottom: .28rem;
+					font-size:.28rem;
+					color: #333333;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow:ellipsis;
+				}
+			}
+				
+			
+		}
+	}
+}

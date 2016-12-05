@@ -1,0 +1,103 @@
+.w_wrapper{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+body{
+	font-size:.32rem;
+}
+.clear{
+	width:0;
+	height:0;
+	overflow:hidden;
+	clear:both;
+}
+$basecolor:#f6514b;
+@mixin btn{
+	
+	width: 2.18rem;
+	height: .82rem;
+	position: absolute;
+	left: 50%;
+	bottom: .7rem;
+	margin-left: -1.09rem;
+	background: url(../img/btn.png);
+	background-size: 100%;
+	padding-left: .6rem;
+	line-height: .82rem;
+	font-size: .36rem;
+	color: #b00600;
+	font-weight: bold;
+		
+}
+@mixin right_arrow{
+	width: .28rem;
+	height: .28rem;
+	transform:rotate(45deg);
+	border:1px solid transparent;
+	border-top-color:#999999;
+	border-right-color: #999999; 
+}
+@mixin bot_arrow{
+	width: .28rem;
+	height: .28rem;
+	transform:rotate(45deg);
+	border:1px solid transparent;
+	border-bottom-color:#999999;
+	border-right-color: #999999; 
+}
+
+@mixin top_arrow{
+	width: .28rem;
+	height: .28rem;
+	transform:rotate(45deg);
+	border:1px solid transparent;
+	border-top-color:#999999;
+	border-left-color: #999999; 
+}
+.common_article{
+	position: absolute;
+	z-index:2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1.25rem;
+	background: #1b1a1e;
+	h2{
+		width: 100%;
+		height: 100%;
+		font-size: .36rem;
+		color: #fff;
+		text-align: center;
+		line-height: 1.25rem;
+	}
+}
+
+.common_header{
+	width: 100%;
+	height: .88rem;
+	position: absolute;
+	z-index:2;
+	left: 0;
+	top: 1.25rem;
+	background: #fff;
+
+	h2{
+		width: 100%;
+		height: .88rem;
+		text-align: center;
+		line-height: .88rem;
+		color: #333333;
+		font-size: .36rem;
+	}
+
+	span{
+		position: absolute;
+		left: .2rem;
+		top: 0;
+		height: .88rem;
+		line-height: .88rem;
+		font-size: .36rem;
+		color: #333;
+	}
+}

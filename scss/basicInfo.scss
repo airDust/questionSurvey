@@ -1,0 +1,155 @@
+.basicInfo_wrapper{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url("../img/bg.png") no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+
+	main{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		padding-top: 2.13rem;
+		position: relative;
+
+		.icon{
+			width: 1.8rem;
+			height: 1.5rem;
+			position: absolute;
+			left: 0;
+			bottom: .8rem;
+			background: url(../img/fruit.png);
+			background-size: 100% 100%;
+		}
+
+		.content{
+			width: 5.3rem;
+			height: 6.6rem;
+			position: absolute;
+			left: 50%;
+			bottom: 1.5rem;
+			margin-left: -2.6rem;
+			padding-left: .2rem;
+			@media screen and (max-height:480px) and (max-width:320px){
+				height: 5.5rem;
+			}
+		}
+		h3{
+			height: 1.6rem;
+			line-height: 1.6rem;
+			text-align: center;
+			color: #b00600;
+			font-size: .36rem;
+			@media screen and (max-height:480px) and (max-width:320px){
+				height: 1.2rem;
+				line-height: 1.2rem;
+			}
+		}
+
+		li{
+			width: 50%;
+			float: left;
+			margin-bottom: .34rem;
+			font-size: .32rem;
+			color: #333333;
+		}
+		i{
+			width: .26rem;
+			height: .26rem;
+			background: url(../img/checked_06.jpg);
+			background-size: 100% 100%;
+			display: inline-block;
+			margin-left: .56rem;
+			margin-right: .32rem;
+		}
+		i.active{
+			background: url(../img/checked_03.jpg);
+			background-size: 100% 100%;
+		}
+		.btn{
+			width: 2.18rem;
+			height: .82rem;
+			position: absolute;
+			left: 50%;
+			bottom: .7rem;
+			margin-left: -1.09rem;
+			background: url(../img/btn.png);
+			background-size: 100%;
+			padding-left: .28rem;
+			line-height: .82rem;
+			font-size: .36rem;
+			color: #b00600;
+			font-weight: bold;
+			@media screen and (max-height:480px) and (max-width:320px){
+				bottom:.1rem;
+			}
+		}
+	}
+
+	.mask{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: rgba(0,0,0,.6);
+		.box{
+			width: 5.46rem;
+			height: 6.25rem;
+			position: absolute;
+			left: 50%;
+			bottom:1.92rem; 
+			margin-left: -2.73rem;
+			background: url("../img/mask.png");
+			background-size:100%; 
+			@media screen and(max-height:480px) and(max-width:320px){
+				bottom:.7rem;
+			}
+		}
+		.close{
+			width: .54rem;
+			height: .6rem;
+			background: url(../img/close.png);
+			background-size: 100%;
+			position: absolute;
+			right: .36rem;
+			top: 0;
+		}
+		.test_btn{
+			width: 2.18rem;
+			height: .82rem;
+			position: absolute;
+			left: 50%;
+			bottom: .4rem;
+			margin-left: -1.09rem;
+			background: url(../img/btn.png);
+			background-size: 100%;
+			padding-left: .28rem;
+			line-height: .82rem;
+			font-size: .36rem;
+			color: #b00600;
+			font-weight: bold;
+		}
+		.describe{
+			padding-top: 3.08rem;
+			width: 4.28rem;
+			line-height: .44rem;
+			font-size: .24rem;
+			color: #333;
+			margin-left: .7rem;
+		}
+		.fish{
+			width: 2.08rem;
+			height: 2.05rem;
+			position: absolute;
+			left:50%;
+			top: .64rem;
+			margin-left: -1.04rem;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
